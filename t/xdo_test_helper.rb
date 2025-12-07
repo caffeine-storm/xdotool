@@ -147,7 +147,7 @@ module XdoTestHelper
     (1 .. times).each do
       begin
         yield
-      rescue MiniTest::Unit::AssertionFailedError => e
+      rescue Minitest::Assertion => e
         $stderr.puts "Retrying..."
         last_exception = e
         sleep(delay)

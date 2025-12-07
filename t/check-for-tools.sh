@@ -14,7 +14,6 @@ need "$XSERVERNAME"
 
 if [ ! -z "$WMNAME" -a "$WMNAME" != "none" ]; then
   need "$WMNAME"
-  exit 1
 fi
 
 need xwininfo
